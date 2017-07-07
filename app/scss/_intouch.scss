@@ -89,7 +89,7 @@
         text-align: center;
         width: 50%;
         margin: 0 auto;
-        top: 30vh;
+        top: 20vh;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -102,6 +102,11 @@
         justify-content: space-between;
         width: 100%;
         margin-bottom: 25px;
+        @media screen and (max-width: 700px) {
+          flex-direction: column;
+          justify-content: space-between;
+
+        }
 
     }
     &__input {
@@ -115,6 +120,9 @@
         color: #9f9acf;
         font-size: 18px;
         font-style: italic;
+          @media screen and (max-width: 700px) {
+            width: 100%;
+          }
         &:focus {
             background: rgba(235, 235, 235, 0.8);
         }
@@ -138,7 +146,7 @@
     &__btn {
         border-radius: 4px;
         background-color: #9f9acf;
-        width: 30%;
+        width: 300px;
         height: 70px;
         font-family: 'ProximaNova';
         color: #fff;

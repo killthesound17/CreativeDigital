@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'ProximaNova';
   src: url("../../app/fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("ttf"), url("../../app/fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff");
@@ -117,6 +118,9 @@
     font-size: 16px;
     font-style: italic;
     text-align: center; }
+    @media screen and (max-width: 700px) {
+      .header-lower-info__description {
+        width: 95%; } }
 
 .about-us {
   background-color: #ebebeb;
@@ -279,7 +283,7 @@
   text-align: center;
   width: 50%;
   margin: 0 auto;
-  top: 30vh;
+  top: 20vh;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,6 +306,15 @@
           justify-content: space-between;
   width: 100%;
   margin-bottom: 25px; }
+  @media screen and (max-width: 700px) {
+    .contact__inputs {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 .contact__input {
   border-radius: 4px;
   background-color: rgba(235, 235, 235, 0.5);
@@ -313,6 +326,9 @@
   color: #9f9acf;
   font-size: 18px;
   font-style: italic; }
+  @media screen and (max-width: 700px) {
+    .contact__input {
+      width: 100%; } }
   .contact__input:focus {
     background: rgba(235, 235, 235, 0.8); }
 .contact__textarea {
@@ -332,7 +348,7 @@
 .contact__btn {
   border-radius: 4px;
   background-color: #9f9acf;
-  width: 30%;
+  width: 300px;
   height: 70px;
   font-family: 'ProximaNova';
   color: #fff;
@@ -348,6 +364,9 @@
 .footer {
   background-color: #9f9acf;
   padding: 30px 0; }
+  @media screen and (max-width: 700px) {
+    .footer {
+      text-align: center; } }
   .footer--footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -363,5 +382,20 @@
   color: #9f9acf !important; }
 .social-media__icobgr {
   color: #ececec; }
+.social-media--footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+#backToTop {
+  position: fixed;
+  bottom: 50px;
+  /* ╨╛╤В╤Б╤В╤Г╨┐ ╨║╨╜╨╛╨┐╨║╨╕ ╨╛╤В ╨╜╨╕╨╢╨╜╨╡╨│╨╛ ╨║╤А╨░╤П ╤Б╤В╤А╨░╨╜╨╕╤Ж╤Л*/
+  right: 50px;
+  cursor: pointer;
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */
