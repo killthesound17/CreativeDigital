@@ -1,0 +1,37 @@
+.about-us {
+    background-color: #ebebeb;
+    padding: 100px;
+}
+
+.about-us-left {
+    text-align: center;
+    padding-top: 20%;
+    box-sizing: border-box;
+    height: 555px;
+    background-image: url('../../app/img/2-layers-about-us.png');
+    background-position: center;
+    background-size: cover;
+    @media screen and (max-width: 700px) {
+      background: none;
+      height: auto;
+    }
+    &__heading {
+      color: #fefbfc;
+font-family: "ProximaNova";
+font-size: 36px;
+font-weight: 600;
+line-height: 47px;
+text-transform: uppercase;
+    }
+
+}
+.about-us-right {
+  padding: 80px;
+    color: #665f60;
+    font-family: "PT Sans";
+    font-size: 20px;
+    @media screen and (max-width: 700px) {
+      padding: 5px;
+      font-size: 14px;
+    }
+}

@@ -1,0 +1,65 @@
+.svg-wrapper {
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 320px;
+  margin-top: 10px;
+}
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #dbdbdb;
+
+}
+.text {
+  color: #fff;
+  font-family: 'ProximaNova';
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 24%;
+}
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+  cursor: pointer;
+}
+/*----------------NAV________*/
+.nav-main {
+    border: none;
+    background-color: inherit;
+    color: #ffffff;
+    font-family: "ProximaNova";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.active-main>a {
+  background-color: inherit;
+}
+
+.nav-main .navs>li>a {
+color: #ffffff;
+}

@@ -1,0 +1,367 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../../app/fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("ttf"), url("../../app/fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../../app/fonts/ProximaNova/ProximaNova-Bold/ProximaNova-Bold.ttf") format("ttf"), url("../../app/fonts/ProximaNova/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../app/img/2-layers.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%; }
+
+.svg-wrapper {
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 320px;
+  margin-top: 10px; }
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #dbdbdb; }
+
+.text {
+  color: #fff;
+  font-family: 'ProximaNova';
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 24%; }
+
+@-webkit-keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px; }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px; } }
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px; }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px; } }
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+  cursor: pointer; }
+
+/*----------------NAV________*/
+.nav-main {
+  border: none;
+  background-color: inherit;
+  color: #ffffff;
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin-top: 10px; }
+
+.active-main > a {
+  background-color: inherit; }
+
+.nav-main .navs > li > a {
+  color: #ffffff; }
+
+.header-lower {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.header-lower-info {
+  text-align: center; }
+  .header-lower-info__heading {
+    color: #fefefb;
+    font-family: "ProximaNova";
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase; }
+    @media screen and (max-width: 700px) {
+      .header-lower-info__heading {
+        font-size: 16px; } }
+  .header-lower-info__description {
+    width: 60%;
+    margin: 0 auto;
+    color: #fefdfd;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-style: italic;
+    text-align: center; }
+
+.about-us {
+  background-color: #ebebeb;
+  padding: 100px; }
+
+.about-us-left {
+  text-align: center;
+  padding-top: 20%;
+  box-sizing: border-box;
+  height: 555px;
+  background-image: url("../../app/img/2-layers-about-us.png");
+  background-position: center;
+  background-size: cover; }
+  @media screen and (max-width: 700px) {
+    .about-us-left {
+      background: none;
+      height: auto; } }
+  .about-us-left__heading {
+    color: #fefbfc;
+    font-family: "ProximaNova";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 47px;
+    text-transform: uppercase; }
+
+.about-us-right {
+  padding: 80px;
+  color: #665f60;
+  font-family: "PT Sans";
+  font-size: 20px; }
+  @media screen and (max-width: 700px) {
+    .about-us-right {
+      padding: 5px;
+      font-size: 14px; } }
+
+.our-services {
+  background-color: #ebebeb; }
+
+.grid {
+  box-sizing: border-box;
+  width: 100%; }
+
+.grid-item {
+  padding-top: 10%;
+  text-align: center;
+  width: 380px;
+  height: 400px;
+  background-color: #ebebeb; }
+  .grid-item--color {
+    background-color: #dbdbdb; }
+  .grid-item--mod {
+    width: 380px;
+    height: 800px;
+    background-image: url("../../app/img/2-layers-services.png");
+    background-size: cover;
+    background-position: center; }
+  .grid-item__name {
+    color: #665f60;
+    font-family: "PT Sans";
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase; }
+    .grid-item__name--mod {
+      color: #fefcfd;
+      font-family: "ProximaNova";
+      font-size: 36px;
+      font-weight: 600;
+      text-transform: uppercase; }
+  .grid-item__text {
+    color: #665f60;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-style: italic;
+    width: 60%;
+    margin: 0 auto; }
+    .grid-item__text--mod {
+      width: 90%;
+      margin: 20% auto;
+      color: #fefcfd;
+      font-family: "PT Sans";
+      font-size: 18px; }
+
+.get-in-touch {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; }
+
+#map {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.5; }
+
+.heading {
+  padding-top: 50px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box; }
+  .heading__name {
+    color: #ffffff;
+    font-family: "ProximaNova";
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase; }
+
+.address {
+  background-color: rgba(235, 235, 235, 0.5);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  right: -260px; }
+  .address:hover {
+    right: 0;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; }
+  .address__text {
+    margin: auto 15px;
+    text-align: center;
+    color: #665f60;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 400; }
+
+.phone {
+  background-color: rgba(235, 235, 235, 0.5);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  top: 270px;
+  right: -260px; }
+  .phone:hover {
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    right: 0; }
+  .phone__text {
+    margin: auto 15px;
+    text-align: center;
+    color: #665f60;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 400; }
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #9f9acf; }
+
+.contact__form {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  top: 30vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.contact__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px; }
+.contact__input {
+  border-radius: 4px;
+  background-color: rgba(235, 235, 235, 0.5);
+  width: 47%;
+  height: 56px;
+  border: none;
+  padding: 0 20px;
+  font-family: 'PT Sans';
+  color: #9f9acf;
+  font-size: 18px;
+  font-style: italic; }
+  .contact__input:focus {
+    background: rgba(235, 235, 235, 0.8); }
+.contact__textarea {
+  border-radius: 4px;
+  background-color: rgba(235, 235, 235, 0.5);
+  width: 100%;
+  height: 200px;
+  border: none;
+  padding: 20px 20px;
+  margin: 0 auto 60px;
+  font-family: 'PT Sans';
+  color: #9f9acf;
+  font-size: 18px;
+  font-style: italic; }
+  .contact__textarea:focus {
+    background: rgba(235, 235, 235, 0.8); }
+.contact__btn {
+  border-radius: 4px;
+  background-color: #9f9acf;
+  width: 30%;
+  height: 70px;
+  font-family: 'ProximaNova';
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0); }
+  .contact__btn:hover {
+    border-color: #9f9acf;
+    background: rgba(235, 235, 235, 0.5);
+    color: #9f9acf; }
+
+.footer {
+  background-color: #9f9acf;
+  padding: 30px 0; }
+  .footer--footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.social-media__link {
+  text-decoration: none; }
+.social-media__ico {
+  font-size: 72px;
+  color: #9f9acf !important; }
+.social-media__icobgr {
+  color: #ececec; }
+
+/*# sourceMappingURL=main.css.map */

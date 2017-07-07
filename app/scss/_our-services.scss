@@ -1,0 +1,63 @@
+.our-services {
+    background-color: #ebebeb;
+}
+
+.grid {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.grid-item {
+    padding-top: 10%;
+    text-align: center;
+    width: 380px;
+    height: 400px;
+    background-color: #ebebeb;
+
+    &--color {
+        background-color: #dbdbdb;
+    }
+
+    &--mod {
+        width: 380px;
+        height: 800px;
+        background-image: url('../../app/img/2-layers-services.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__img {}
+
+    &__name {
+        color: #665f60;
+        font-family: "PT Sans";
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &--mod {
+            color: #fefcfd;
+            font-family: "ProximaNova";
+            font-size: 36px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    &__text {
+        color: #665f60;
+        font-family: "PT Sans";
+        font-size: 18px;
+        font-style: italic;
+        width: 60%;
+        margin: 0 auto;
+
+        &--mod {
+            width: 90%;
+            margin: 20% auto;
+            color: #fefcfd;
+            font-family: "PT Sans";
+            font-size: 18px;
+        }
+    }
+}

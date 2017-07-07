@@ -1,0 +1,23 @@
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../../app/fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.ttf') format('ttf'), url('../../app/fonts/ProximaNova/ProximaNova-Semibold/ProximaNova-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../../app/fonts/ProximaNova/ProximaNova-Bold/ProximaNova-Bold.ttf') format('ttf'), url('../../app/fonts/ProximaNova/ProximaNova-Bold/ProximaNova-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@import "_header";
+@import "_header-upper";
+@import "_header-lower";
+@import "_about";
+@import "_our-services";
+@import "_intouch";
+@import "_footer";

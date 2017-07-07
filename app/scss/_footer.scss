@@ -1,0 +1,26 @@
+.footer {
+  background-color: #9f9acf;
+  padding: 30px 0;
+  &--footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.social-media {
+
+
+
+    &__link {
+        text-decoration: none;
+    }
+    &__container {
+    }
+    &__ico {
+      font-size: 72px;
+      color: #9f9acf !important;
+    }
+
+    &__icobgr {
+    color: #ececec;
+    }
+}

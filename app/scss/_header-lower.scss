@@ -1,0 +1,32 @@
+.header-lower {
+  position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header-lower-info {
+
+    text-align: center;
+
+    &__heading {
+        color: #fefefb;
+        font-family: "ProximaNova";
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 60px;
+        text-transform: uppercase;
+        @media screen and (max-width: 700px) {
+          font-size: 16px;
+        }
+    }
+
+    &__description {
+        width: 60%;
+        margin: 0 auto;
+        color: #fefdfd;
+        font-family: "PT Sans";
+        font-size: 16px;
+        font-style: italic;
+        text-align: center;
+    }
+}
